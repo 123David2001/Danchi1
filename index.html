@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenida</title>
+	<link rel="stylesheet" href="estilos.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="contenedor">
+		<h1>¡Bienvenida!</h1>
+		<input type="text" id="nombre" placeholder="Ingrese su nombre">
+		<button onclick="mostrarMensaje()">Mostrar mensaje</button>
+	</div>
+
+	<script>
+		function mostrarMensaje() {
+			var nombre = document.getElementById("nombre").value;
+			if (nombre != "") {
+				var ventana = window.open("", "_blank", "width=400,height=200");
+				ventana.document.write("<h1 style='color: hsl(277, 47%, 10%); text-align: center;'>Que bonitos ojitos tiene usted señorita, " + nombre + ", Que descanse ❤, ya no este enojada conmigo, por cierto sabia que la luna de hoy es casi tan hermosa como usted.</h1>");
+			} else {
+				alert("Ingrese su nombre");
+			}
+		}
+	</script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
